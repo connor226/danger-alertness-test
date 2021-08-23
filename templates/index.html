@@ -3,12 +3,15 @@
     <head>
         <meta charset="utf-8">
         <title>測驗程式</title>
+        <!--
         <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+        -->
     </head>
     <body>
         <h1>危險感知測驗</h1>
-        <form>
-            <p>請先輸入受測編號:<input type="text" name="test-id"></p>
+        <p>在接下來的影片中，請您在感知到"危險"或"可能發生危險"時點擊右方的作答區</p>
+        <form method='POST'>
+            <p>請輸入受測編號:<input type="text" name="test-id"></p>
             <p><input type="submit" value="開始測驗"></p>
         </form>
     </body>

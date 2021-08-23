@@ -4,8 +4,12 @@
         <meta charset="utf-8">
         <title>測驗程式</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+        <script src="{{ url_for('static', filename='js/main.js') }}" />
     </head>
     <body>
-        <video src="{}"></video>
+        <video id="video-box" controls>
+            <source src="{{ url_for('static', filename='video/'+num+'.mp4') }}" type="video/mp4">
+        </video>
+        <div id="hit-box"></div>
     </body>
 </html>
