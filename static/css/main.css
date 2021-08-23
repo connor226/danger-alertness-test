@@ -1,3 +1,26 @@
-#hit-box{
+#video-box{
+    width: 60%;
+    height: auto;
+    float: left;
+}
 
+#hit-box{
+    width: 38%;
+    height: 72vh;
+    right: 0px;
+    border: 5px solid black;
+    text-align: center;
+    font-size: 100px;
+    position: fixed;
+}
+
+#next-button{
+    width: 38%;
+    height: 19vh;
+    right: 0px;
+    bottom: 10px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: 36px;
+    position: fixed;
 }
