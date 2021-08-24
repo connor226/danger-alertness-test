@@ -7,13 +7,18 @@
         <link rel="shortcut icon" type="image/gif" href="{{ url_for('static', filename='assets/favicon.gif') }}"/>
     </head>
     <body>
-        <video id="video-box" controls>
-            <source src="{{ url_for('static', filename='video/'+num+'.mp4') }}" type="video/mp4">
-        </video>
-        <div id="hit-box">作答區</div>
+        <div id="video-container">
+            <video id="video-box">
+                <source src="{{ url_for('static', filename='video/'+num+'.mp4') }}" type="video/mp4">
+            </video>
+            <img id="play-button" src="{{ url_for('static', filename='assets/play-button.svg') }}" />
+            <div id="hit-box">點擊區域</div>
+        </div>
+        <!--
         <form id="req-data" onsubmit="addData()" method="POST">
             <input id="next-button" type="button" disabled=true value="下一題">
         </form>
+        -->
         <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     </body>
 </html>
