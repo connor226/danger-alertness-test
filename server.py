@@ -12,7 +12,7 @@ def index():
         return render_template('index.html')
     elif request.method == 'POST':
         record.append(request.form['test-id'])
-        return redirect(url_for('vid', num = 1))
+        return redirect(url_for('vid', num = 1, total = len(os.listdir('./static/video/'))))
 
 @app.route('/<int:num>', methods = ['GET', 'POST'])
 def vid(num):
@@ -34,7 +34,7 @@ def vid(num):
                 new_data = new_data[0]
             record.append(new_data)
             return redirect(url_for('vid', num = num + 1))
-        return render_template('main.html', num = str(num))
+        return render_template('main.html', num = str(num), total = len(os.listdir('./static/video/')))
 
 if __name__ == '__main__':
     app.run(port=8000)

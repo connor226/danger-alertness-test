@@ -4,30 +4,37 @@ body{
 }
 
 #video-box{
-    width: 128vh;
-    height: 72vh;
-    right: 6vh;
-    top: 5vh;
+    width: 100vw;
+    height: 75vh;
+    left: 0;
+    top: 4vh;
     position: absolute;
 }
 
 #hit-box{
-    width: 40vh;
+    width: 42vh;
     height: 15vh;
-    right: 6vh;
-    top: 80vh;
+    right: 5vw;
+    top: 82vh;
     border: 5px solid black;
     background: yellowgreen;
     text-align: center;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 10vh;
-    position: fixed;
+    position: absolute;
 }
 
 #play-button{
-    width: 20vh;
-    height: 20vh;
-    top: 31vh;
-    right: 60vh;
+    width: 12vw;
+    height: 12vw;
+    top: 30vh;
+    left: 44vw;
+    position: absolute;
+}
+
+#info-box{
+    top: 82vh;
+    left: 5vw;
+    font-size: 10vh;
     position: absolute;
 }

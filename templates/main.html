@@ -13,12 +13,12 @@
             </video>
             <img id="play-button" src="{{ url_for('static', filename='assets/play-button.svg') }}" />
             <div id="hit-box">點擊區域</div>
+            <div id="info-box">第{{ num }}/{{ total }}題</div>
         </div>
-        <!--
-        <form id="req-data" onsubmit="addData()" method="POST">
-            <input id="next-button" type="button" disabled=true value="下一題">
+        
+        <form id="req-data" method="POST">
         </form>
-        -->
+        
         <script src="{{ url_for('static', filename='js/main.js') }}"></script>
     </body>
 </html>
