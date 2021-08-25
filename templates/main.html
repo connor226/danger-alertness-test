@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>測驗程式</title>
+        <title>第{{ num }}/{{ total }}題</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}"/>
         <link rel="shortcut icon" type="image/gif" href="{{ url_for('static', filename='assets/favicon.gif') }}"/>
     </head>
@@ -11,9 +11,27 @@
             <video id="video-box">
                 <source src="{{ url_for('static', filename='video/'+num+'.mp4') }}" type="video/mp4">
             </video>
+            <div id="div1" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div2" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div3" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div4" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div5" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div6" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div7" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div8" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div9" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div10" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div11" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div12" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div13" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div14" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div15" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div16" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div17" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div18" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div19" class="grid"  onmousedown="omg(this)" ></div>
+            <div id="div20" class="grid"  onmousedown="omg(this)" ></div>
             <img id="play-button" src="{{ url_for('static', filename='assets/play-button.svg') }}" />
-            <div id="hit-box">點擊區域</div>
-            <div id="info-box">第{{ num }}/{{ total }}題</div>
         </div>
         
         <form id="req-data" method="POST">

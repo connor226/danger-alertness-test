@@ -4,37 +4,52 @@ body{
 }
 
 #video-box{
-    width: 100vw;
-    height: 85vh;
-    left: 0;
-    top: 2vh;
-    position: absolute;
-}
-
-#hit-box{
-    width: 30vh;
-    height: 9vh;
-    right: 5vw;
-    top: 89vh;
-    border: 5px solid black;
-    background: yellowgreen;
-    text-align: center;
-    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 6vh;
-    position: absolute;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
 }
 
 #play-button{
-    width: 12vw;
-    height: 12vw;
-    top: 35vh;
-    left: 44vw;
+    width: 20vw;
+    height: 20vw;
+    left: 40vw;
+    top: 30vh;
     position: absolute;
 }
 
-#info-box{
-    top: 89vh;
-    left: 5vw;
-    font-size: 6vh;
-    position: absolute;
+.grid{
+    min-width: 20%;
+    min-height: 25%;
+    margin: 0;
+    position: fixed;
+}
+
+#div1, #div2, #div3, #div4, #div5{
+    top: 0;
+}
+#div6, #div7, #div8, #div9, #div10{
+    top: 25%;
+}
+#div11, #div12, #div13, #div14, #div15{
+    top: 50%;
+}
+#div16, #div17, #div18, #div19, #div20{
+    top: 75%;
+}
+#div1, #div6, #div11, #div16{
+    left: 0;
+}
+#div2, #div7, #div12, #div17{
+    left: 20%;
+}
+#div3, #div8, #div13, #div18{
+    left: 40%;
+}
+#div4, #div9, #div14, #div19{
+    left: 60%;
+}
+#div5, #div10, #div15, #div20{
+    left: 80%;
 }

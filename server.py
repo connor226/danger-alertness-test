@@ -26,10 +26,9 @@ def vid(num):
         return render_template('end.html')
     else:
         if request.method == 'POST':
-            raw_data, new_data = [], 'X'
-            if request.form["data"]:
-                raw_data = list(request.form["data"].split(','))
-                new_data = list(map(float, raw_data))
+            new_data = 'X'
+            if request.form["time"]:
+                new_data = list(map(lambda x, y: (x, y), request.form["place"].split(','), map(float,request.form["time"].split(','))))
             if len(new_data) == 1:
                 new_data = new_data[0]
             record.append(new_data)
