@@ -28,9 +28,7 @@ def vid(num):
         if request.method == 'POST':
             new_data = 'X'
             if request.form["time"]:
-                new_data = list(map(lambda x, y: (x, y), request.form["place"].split(','), map(float,request.form["time"].split(','))))
-            if len(new_data) == 1:
-                new_data = new_data[0]
+                new_data = list(map(lambda x, y, z: f'{x} {y} {z}', map(float, request.form["placeX"].split(',')), map(float, request.form["placeY"].split(',')), map(float,request.form["time"].split(','))))
             record.append(new_data)
             return redirect(url_for('vid', num = num + 1))
         return render_template('main.html', num = str(num), total = len(os.listdir('./static/video/')))
