@@ -26,7 +26,6 @@ with open('./result.csv', 'r', newline='') as f:
                             _X, _Y, _s = map(float, click[1:-1].split())
                             _X *= full_screen_width
                             _Y *= full_screen_height
-                            print(_X, _Y, _s)
                             intended_frame = int(_s * framerate)
                             video.set(1, intended_frame)
                             ret, frame = video.read()

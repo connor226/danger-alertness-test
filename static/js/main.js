@@ -28,6 +28,6 @@ button.addEventListener("click", () => {
 })
 function omg(event){
     timestamp.push(video.currentTime);
-    placemarkX.push(event.clientX/window.innerWidth);
-    placemarkY.push(event.clientY/window.innerHeight);
+    placemarkX.push(event.pageX / window.innerWidth);
+    placemarkY.push(event.pageY / window.innerHeight);
 }
